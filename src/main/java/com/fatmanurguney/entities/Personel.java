@@ -11,8 +11,6 @@ import lombok.Data;
 @Data
 public class Personel {
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "PersonelSEQ")
-	@SequenceGenerator(name = "PersonelSEQ", sequenceName = "personel_pk_seq")
 	private int id;
 	private String adi;
 	private String soyadi;
